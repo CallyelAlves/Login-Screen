@@ -4,7 +4,7 @@
     --first-color-light: #b3b1b6;
     --first-color-white: #f1f1f3;
 
-    --h1-font-size: 1.5rem;
+    --h1-font-size: 2rem;
     --small-font-size: .800rem;
     --normal-font-size: .900rem;
     --html-font-type: sans-serif;
@@ -26,12 +26,6 @@ a, span{
     color: var(--first-color);
 }
 
-@media screen and (min-width: 750px){
-    :root{
-        --small-font-size: 1rem;
-    }
-}
-
 .login{
     display: flex;
     justify-content: center;
@@ -40,7 +34,7 @@ a, span{
 }
 
 .loginContainer{
-    width: 700px;
+    width: 600px;
 }
 
 .loginForms{
@@ -55,7 +49,7 @@ a, span{
     padding: 2rem 1rem;
     border-radius: 1rem;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
 }
 
 .loginCreate{
@@ -143,4 +137,10 @@ a, span{
     font-size: 1.5rem;
     color: var(--first-color-dark);
     margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 750px){
+    :root{
+        --small-font-size: 1rem;
+    }
 }
