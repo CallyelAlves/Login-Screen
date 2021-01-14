@@ -14,11 +14,11 @@
         <div class="loginContainer">
             <div class="loginForms">
                 <form action="" class="loginStart" id="loginIn">
-                    <h1 class="loginTitle">Sign In</h1>
-
+                    <h1 class="loginTitle">Login</h1>
+                    <span id="loginError">Incorrect username/password combination.</span>
                     <div class="loginBox">
                         <i class='bx bxs-user loginIcon'></i>
-                        <input type="text" class="loginInput" placeholder="Username">
+                        <input type="text" id="loginInput" class="loginInput" placeholder="Username">
                     </div>
 
                     <div class="loginBox">
@@ -28,7 +28,7 @@
 
                     <a href="#" class="loginForgot">Forgot Password?</a>
 
-                    <a href="#"class="loginbtn">Sign In</a>
+                    <a href="#" id="btnLogin" onclick="logar()" class="loginbtn">Sign In</a>
 
                     <div>
                         <span class="loginAccount">Don't have an Account?</span>
@@ -41,20 +41,20 @@
 
                     <div class="loginBox">
                         <i class='bx bxs-user loginIcon'></i>
-                        <input type="text" class="loginInput" placeholder="Username">
+                        <input type="text" id="username" class="loginInput" placeholder="Username">
                     </div>
 
                     <div class="loginBox">
                         <i class='bx bx-mail-send loginIcon' ></i>
-                        <input type="email" class="loginInput" placeholder="Email">
+                        <input type="email" id="email" class="loginInput" placeholder="Email">
                     </div>
 
                     <div class="loginBox">
                         <i class='bx bxs-lock loginIcon'></i>
-                        <input type="password" class="loginInput" placeholder="Password">
+                        <input type="password" id="password" class="loginInput" placeholder="Password">
                     </div>
 
-                    <a href="#" class="loginbtn">Sign Up</a>
+                    <a href="#" onclick="createAccount()" id="createAccount" class="loginbtn">Sign Up</a>
 
                     <div>
                         <span class="loginAccount">Already have an Account?</span>

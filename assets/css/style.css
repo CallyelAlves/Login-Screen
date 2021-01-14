@@ -3,6 +3,7 @@
     --first-color-dark: #23009d;
     --first-color-light: #b3b1b6;
     --first-color-white: #f1f1f3;
+    --first-color-error: #cc3333;
 
     --h1-font-size: 2rem;
     --small-font-size: .800rem;
@@ -35,6 +36,11 @@ a, span{
 
 .loginContainer{
     width: 600px;
+}
+
+#loginError{
+    color: var(--first-color-error);
+    display: none;
 }
 
 .loginForms{
@@ -113,6 +119,10 @@ a, span{
 
 .loginbtn:hover{
     background-color: var(--first-color-dark);
+}
+
+.loginbtn:active{
+    transform: scale(0.97);
 }
 
 .loginAccount, .loginSignup, .loginSignIn{
