@@ -139,8 +139,11 @@ a, span{
     margin: 0 1.5rem;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (max-width: 620px){
     :root{
         --small-font-size: 1rem;
+    }
+    .loginContainer{
+        width: 300px;
     }
 }
