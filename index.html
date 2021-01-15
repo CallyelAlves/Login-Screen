@@ -11,19 +11,19 @@
 <body>
     
     <div class="login">
-        <div class="loginContainer">
+        <div id="loginContainer" class="loginContainer">
             <div class="loginForms">
                 <form action="" class="loginStart" id="loginIn">
                     <h1 class="loginTitle">Login</h1>
                     <span id="loginError">Incorrect username/password combination.</span>
                     <div class="loginBox">
                         <i class='bx bxs-user loginIcon'></i>
-                        <input type="text" id="loginInput" class="loginInput" placeholder="Username">
+                        <input type="text" id="loginInputName" autofocus class="loginInput" placeholder="Username">
                     </div>
 
                     <div class="loginBox">
                         <i class='bx bxs-lock loginIcon'></i>
-                        <input type="password" class="loginInput" placeholder="Password">
+                        <input type="password" id="loginInputPassword" class="loginInput" autofocus placeholder="Password">
                     </div>
 
                     <a href="#" class="loginForgot">Forgot Password?</a>
@@ -38,7 +38,7 @@
 
                 <form action="" class="loginCreate" id="loginUp">
                     <h1 class="loginTitle">Create Account</h1>
-
+                    <span id="createError">Fill in all fields</span>
                     <div class="loginBox">
                         <i class='bx bxs-user loginIcon'></i>
                         <input type="text" id="username" class="loginInput" placeholder="Username">
@@ -68,6 +68,9 @@
                     </div>
                 </form>
             </div>
+        </div>
+        <div id="loading">
+            <div class="spinner"></div>
         </div>
     </div>
 
