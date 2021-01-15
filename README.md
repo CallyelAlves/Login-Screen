@@ -2,8 +2,6 @@
  
 ## Design login screen using localStorage.
 
-![ImagemLogin](./readmeImages/login.png)
-
-![ImagemCreate](./readmeImages/create.png)
-
+![ImagemLogin](./readmeImages/login.PNG)
+![ImagemCreate](./readmeImages/create.PNG)
 ![Gif](./readmeImages/gif.gif)
